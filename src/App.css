@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+/* Black and white theme, no logo */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: #f5ecd7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(18px + 2vmin);
+  color: #442a1f;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  border: 12px solid #a0522d;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  background: #a0522d;
+  color: #fffbe6;
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  border: 4px solid #442a1f;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  transition: transform 0.1s, background 0.2s, color 0.2s;
+  box-shadow: 0 4px 16px rgba(160,82,45,0.10);
+}
+button:hover {
+  background: #fffbe6;
+  color: #a0522d;
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(160,82,45,0.18);
+  border: 4px solid #a0522d;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
